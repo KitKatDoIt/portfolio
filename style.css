@@ -1,0 +1,33 @@
+body {
+    background-color:#3f481c;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#efa7c9;
+
+}
+
+nav li{
+    color:#3f481c;
+    list-style: none;
+  margin: 0;
+  padding: 0;
+
+  /* Включаем Flexbox */
+  display: flex;
+  
+  /* Выстраиваем элементы в горизонтальную линию (это значение по умолчанию, но для наглядности укажем) */
+  flex-direction: row;
+  
+  /* Выравниваем элементы строго по центру по горизонтали */
+  justify-content: center;
+  
+  /* Выравниваем элементы по центру по вертикали (если у меню есть высота) */
+  align-items: center;
+  
+  /* Добавляем красивое расстояние между пунктами меню */
+  gap: 20px;
+}
+
+nav ul {
+    background-color:#efa7c9;
+    border-radius: 15px;
+}
