@@ -26,7 +26,68 @@ nav ul {
 }
 
 .about {
+    padding: 10px;
+    margin:auto;
     background-color:#efa7c9;
     color:#3f481c;
     border-radius: 10px;
+}
+
+.about{
+  display: flex;
+  gap: 30px;
+  max-width: 800px;    /* Ограничиваем общую ширину блока */
+}
+
+#text-content{
+  flex: 1;             /* Текст занимает всё свободное место слева */
+}
+
+.card-image {
+  width: 300px;        /* Фиксированная ширина картинки */
+  height: auto;
+  border-radius: 8px;  /* Скругленные уголки для красоты */
+}
+
+a:hover{
+    color:#3f481c;
+}
+
+a:link {
+    color:#3f481c;
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+}
+
+a {
+    font-size:large
+}
+
+/* 1. Стили для мобильных телефонов (по умолчанию) */
+.about {
+  display: flex;
+  
+  /* На мобильных элементы идут друг под другом (сначала текст, снизу фото) */
+  flex-direction: column; 
+  gap: 20px;
+}
+
+.card-image {
+  width: 100%; /* Фотография растягивается во всю ширину экрана */
+  height: auto;
+}
+
+/* 2. Стили для больших экранов (например, компьютеров шире 768px) */
+@media (min-width: 768px) {
+  .card {
+    /* На ПК выстраиваем обратно в горизонтальную линию */
+    flex-direction: row; 
+  }
+  
+  .card-image {
+    width: 300px; /* На ПК возвращаем картинке фиксированный размер */
+  }
 }
