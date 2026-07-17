@@ -169,3 +169,72 @@ a {
     height: 100%;
     border-radius: 4px;
 }
+
+.project-section {
+    background-color:#efa7c9;
+    color:#3f481c;
+    text-align:center;
+    padding: 60px 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.project-card {
+    background-color:#efa7c9;
+    border: 1px solid #222533;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.card-image-wrapper {
+    position: relative;
+}
+
+.card-number {
+    position:absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 { margin: 0 0 10px 0; font-size: 18px; }
+.card-content p { color: #888; font-size: 14px; line-height: 1.5; }
+.view-project {
+    display: inline-block;
+    margin-top: 15px;
+    color: #6f42c1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.card-content{
+    color:#3f481c
+}
+
+@media (max-width: 900px) {
+    .skills-grid, .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
