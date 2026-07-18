@@ -238,3 +238,36 @@ a {
         gap: 20px;
     }
 }
+
+.subtitle {
+    color:#efa7c9;
+}
+
+.subtitle, .title {
+    text-align:center;
+}
+
+#contacts {
+    background-color:#efa7c9;
+    color:#3f481c;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#mainpage {
+    text-align:center;
+}
+
+.text {
+    text-align:center;
+}
+footer {
+    background-color:#955e78;
+    color:#493348;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align:center;
+}
+
